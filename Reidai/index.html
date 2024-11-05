@@ -4,28 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sample</title>
+    <title>例題</title>
 </head>
 <body>
     <div id="app">
         <h2>アカウント作成</h2>
+        <!-- パスワード入力 -->        
         
-        <label>パスワード:
-          <input v-model="password" type="password" placeholder="パスワード">
-        </label>
-        
-        <label>パスワード確認:
-          <input v-model="confirmPassword" type="password" placeholder="パスワード確認">
-        </label>
+        <!-- パスワード確認入力 -->        
       
-        <!-- 登録ボタン -->
-        <button v-if="canRegister">登録</button>
-        <button v-else>使用不可</button>
+        <!-- 登録ボタン　条件付きレンダリング -->
         
-        <!-- 条件付きレンダリング -->
-        <p v-if="passwordMismatch">パスワードが一致しません</p>
+        <!-- メッセージ　条件付きレンダリング -->
         
-      </div>    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="./script/script.js"></script>
 </body>
 </html>
